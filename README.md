@@ -32,7 +32,6 @@ categoria_do_produto
 preco_unitario
 
 quantidade
-
 valor_do_desconto
 
 valor_total
@@ -54,18 +53,36 @@ avaliacao_do_cliente
 🔍 Perguntas de Negócio Durante a Análise Exploratória
 
 Como está a divisão de satisfação do cliente?
+<img width="2113" height="1639" alt="Sastifação_de_clientes (1)" src="https://github.com/user-attachments/assets/c8a53b82-0211-45dc-b1ef-0330c30fc257" />
 
 
-O gráfico evidencia uma maior concentração de avaliações positivas, porém apresenta um volume considerável de insatisfação, especialmente nas classificações 1 e 2, indicando pontos críticos que merecem atenção estratégica.
+
+O gráfico evidencia uma maior concentração de avaliações positivas, porém apresenta um volume considerável de insatisfação,
+especialmente nas classificações 1 e 2, indicando pontos críticos que merecem atenção estratégica.
+
 Qual cidade mais vendeu?
-(imagem do gráfico aqui)
+
+<img width="2113" height="1775" alt="Total_vendas_por_cidade (1)" src="https://github.com/user-attachments/assets/949c6d6f-ecf5-41a4-89ad-2ba9dc13cfa8" />
+
+
+
+
 O gráfico destaca as cidades de Istanbul e Ankara como os principais polos de vendas dentro do conjunto de dados analisado.
+
+
 Qual o gênero possui maior influência nas cidades com mais vendas?
-(imagem do gráfico aqui)
+
+<img width="2319" height="2272" alt="Distribuição_gênero (1)" src="https://github.com/user-attachments/assets/ea646032-df3e-44da-bc9c-b57a431b3bde" />
+
+
 É possível observar que, na cidade com maior volume de vendas (Istanbul), o público predominante é do gênero masculino. Já na segunda cidade com maior faturamento (Ankara), o gênero feminino apresenta maior destaque.
+
 Qual o dispositivo mais utilizado pelos clientes para efetuar compras?
-(imagem do gráfico aqui)
-O gráfico evidencia o uso do dispositivo mobile como padrão dominante entre os clientes, indicando uma forte tendência de consumo por meio de dispositivos móveis.
+<img width="1504" height="1509" alt="Gráfico%_aparelho_usados" src="https://github.com/user-attachments/assets/879ef5bc-dfca-4dfa-afd4-d53ce73bd75f" />
+
+
+O gráfico demostrar o uso do dispositivo mobile como padrão dominante entre os clientes, indicando uma forte tendência de consumo por meio de dispositivos móveis.
+
 A partir das perguntas respondidas durante a análise exploratória, foi possível reconhecer padrões e comportamentos relevantes dos clientes, identificar oportunidades de melhoria e direcionar a análise para aspectos estratégicos do negócio.
 
 ⚙️ Desenvolvimento do Modelo
@@ -82,11 +99,20 @@ A quantidade de grupos não foi definida de forma arbitrária. A decisão foi ba
 
 📈 Resultados do Modelo
 O modelo conseguiu segmentar os clientes em dois grupos distintos, representando perfis comportamentais diferentes.
-Por meio do coeficiente de silhueta, foi possível avaliar a qualidade da clusterização, obtendo um valor de 0.32. Esse resultado é considerado razoável, levando em conta a complexidade da base de dados e a diversidade das variáveis envolvidas no processo.
+
+Por meio do coeficiente de silhueta, foi possível avaliar a qualidade da clusterização, obtendo um valor de 0.32. 
+Esse resultado é considerado razoável, levando em conta a complexidade da base de dados e a diversidade das variáveis envolvidas no processo.
+
 🛠️ Ferramentas e Bibliotecas Utilizadas
+
 Google Colab
+
 Python
+
 Pandas
+
 Matplotlib
+
 Seaborn
+
 Scikit-learn
