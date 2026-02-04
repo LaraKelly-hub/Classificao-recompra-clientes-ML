@@ -90,6 +90,14 @@ Já na segunda cidade com maior faturamento (Ankara), o gênero feminino apresen
 
 O gráfico demostrar destacar o dispositivo mobile, com 57.2% de uso pelos clientes, indicando uma forte tendência de consumo por meio de dispositivos móveis.
 
+
+5- Qual forma de pagamento o clientes usam com frequência?
+<img width="640" height="480" alt="Quantidade_de_vendas_por_forma_pagamento" src="https://github.com/user-attachments/assets/523c9843-9289-4179-a9b9-3c3a30a7ba6d" />
+
+
+O método Crédit Card (Cartão de crédito) se destaca como prefência.
+
+
 A partir das perguntas respondidas durante a análise exploratória, foi possível reconhecer padrões e comportamentos relevantes dos clientes, identificar oportunidades de melhoria e direcionar a análise para aspectos estratégicos do negócio.
 
 ⚙️ Desenvolvimento do Modelo
@@ -104,7 +112,8 @@ Definição final de 2 clusters
 
 A quantidade de grupos não foi definida de forma arbitrária. A decisão foi baseada no método do cotovelo, no gráfico abaixo é possivel notar uma formação de cotovelo no número 2,
 apresentando uma inflexão clara indicando a quantidade de clusters mais adequada para os dados analisados.
-<img width="800" height="400" alt="Método_cotovelo_quantidade_grupos" src="https://github.com/user-attachments/assets/b16997c8-5255-4a9e-9802-165d6e5613e2" />
+<img width="800" height="400" alt="Metodo_cotovelo" src="https://github.com/user-attachments/assets/2cf67498-0b68-4446-aafa-bdca1a5540d7" />
+
 
 
 📈 Resultados do Modelo
