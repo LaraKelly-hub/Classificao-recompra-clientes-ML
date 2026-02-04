@@ -13,46 +13,54 @@ Por se tratar de um problema sem rótulo explícito, a utilização de um algori
 
 📊 Detalhamento da Base de Dados
 
-O dataset utilizado contém informações relacionadas a pedidos, comportamento de navegação, perfil do cliente e experiência de compra. As colunas presentes na base de dados são:
+A base de dados utilizada no projeto contém informações transacionais, comportamentais e demográficas dos clientes, permitindo uma análise abrangente do comportamento de compra e da satisfação do consumidor.
+O dataset é composto pelas seguintes variáveis:
 
-id_do_pedido
+id_do_pedido: identificador único de cada pedido
 
-data
+data: data em que o pedido foi realizado
 
-id_do_cliente
+id_do_cliente: identificador único do cliente
 
-idade
+idade: idade do cliente
 
-sexo
+sexo: gênero do cliente
 
-cidade
+cidade: cidade onde o cliente reside
 
-categoria_do_produto
+categoria_do_produto: categoria do produto adquirido
 
-preco_unitario
+preco_unitario: preço unitário do produto
 
-quantidade
-valor_do_desconto
+quantidade: quantidade de itens comprados no pedido
 
-valor_total
+valor_do_desconto: valor aplicado de desconto
 
-metodo_de_pagamento
+valor_total: valor total do pedido após descontos
 
-tipo_dispositivo
+metodo_de_pagamento: forma de pagamento utilizada
 
-duracao_da_sessao_em_minutos
+tipo_dispositivo: dispositivo usado para realizar a compra (ex: mobile, desktop)
 
-paginas_visualizadas
+duracao_da_sessao_em_minutos: tempo de permanência do cliente no site
 
-cliente_recorrente
+paginas_visualizadas: número de páginas acessadas durante a sessão
 
-tempo_de_entrega
+cliente_recorrente: indica se o cliente já realizou compras anteriores
 
-avaliacao_do_cliente
+tempo_de_entrega: tempo de entrega do pedido (em dias)
+
+avaliacao_do_cliente: nota atribuída pelo cliente após a compra
+
+Essa diversidade de variáveis possibilitou a exploração de múltiplas dimensões do comportamento do cliente,
+sendo essencial para a identificação de padrões relevantes e para a aplicação de técnicas de aprendizado não supervisionado voltadas à segmentação e análise de propensão à recompra.
+
+
+
 
 🔍 Perguntas de Negócio Durante a Análise Exploratória
 
-Como está a divisão de satisfação do cliente?
+1- Como está a divisão de satisfação dos clientes?
 <img width="2113" height="1639" alt="Sastifação_de_clientes (1)" src="https://github.com/user-attachments/assets/c8a53b82-0211-45dc-b1ef-0330c30fc257" />
 
 
@@ -60,8 +68,7 @@ Como está a divisão de satisfação do cliente?
 O gráfico evidencia uma maior concentração de avaliações positivas, porém apresenta um volume considerável de insatisfação,
 especialmente nas classificações 1 e 2, indicando pontos críticos que merecem atenção estratégica.
 
-Qual cidade mais vendeu?
-
+2- Qual cidade mais vendeu?
 <img width="2113" height="1775" alt="Total_vendas_por_cidade (1)" src="https://github.com/user-attachments/assets/949c6d6f-ecf5-41a4-89ad-2ba9dc13cfa8" />
 
 
@@ -70,18 +77,18 @@ Qual cidade mais vendeu?
 O gráfico destaca as cidades de Istanbul e Ankara como os principais polos de vendas dentro do conjunto de dados analisado.
 
 
-Qual o gênero possui maior influência nas cidades com mais vendas?
-
+3- Qual gênero possui maior influência nas cidades com mais vendas?
 <img width="2319" height="2272" alt="Distribuição_gênero (1)" src="https://github.com/user-attachments/assets/ea646032-df3e-44da-bc9c-b57a431b3bde" />
 
 
-É possível observar que, na cidade com maior volume de vendas (Istanbul), o público predominante é do gênero masculino. Já na segunda cidade com maior faturamento (Ankara), o gênero feminino apresenta maior destaque.
+É possível observar que, na cidade com maior volume de vendas (Istanbul), o público predominante é do gênero masculino.
+Já na segunda cidade com maior faturamento (Ankara), o gênero feminino apresenta maior destaque.
 
-Qual o dispositivo mais utilizado pelos clientes para efetuar compras?
+4- Qual o dispositivo mais utilizado pelos clientes para efetuar compras?
 <img width="1504" height="1509" alt="Gráfico%_aparelho_usados" src="https://github.com/user-attachments/assets/879ef5bc-dfca-4dfa-afd4-d53ce73bd75f" />
 
 
-O gráfico demostrar o uso do dispositivo mobile como padrão dominante entre os clientes, indicando uma forte tendência de consumo por meio de dispositivos móveis.
+O gráfico demostrar destacar o dispositivo mobile, com 57.2% de uso pelos clientes, indicando uma forte tendência de consumo por meio de dispositivos móveis.
 
 A partir das perguntas respondidas durante a análise exploratória, foi possível reconhecer padrões e comportamentos relevantes dos clientes, identificar oportunidades de melhoria e direcionar a análise para aspectos estratégicos do negócio.
 
@@ -95,7 +102,10 @@ Inicialização com 10 centroides
 
 Definição final de 2 clusters
 
-A quantidade de grupos não foi definida de forma arbitrária. A decisão foi baseada no método do cotovelo, no qual o gráfico apresentou uma inflexão clara indicando a quantidade de clusters mais adequada para os dados analisados.
+A quantidade de grupos não foi definida de forma arbitrária. A decisão foi baseada no método do cotovelo, no gráfico abaixo é possivel notar uma formação de cotovelo no número 2,
+apresentando uma inflexão clara indicando a quantidade de clusters mais adequada para os dados analisados.
+<img width="800" height="400" alt="Método_cotovelo_quantidade_grupos" src="https://github.com/user-attachments/assets/b16997c8-5255-4a9e-9802-165d6e5613e2" />
+
 
 📈 Resultados do Modelo
 O modelo conseguiu segmentar os clientes em dois grupos distintos, representando perfis comportamentais diferentes.
