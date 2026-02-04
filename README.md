@@ -92,7 +92,8 @@ O gráfico demostrar destacar o dispositivo mobile, com 57.2% de uso pelos clien
 
 
 5- Qual forma de pagamento o clientes usam com frequência?
-<img width="640" height="480" alt="Quantidade_de_vendas_por_forma_pagamento" src="https://github.com/user-attachments/assets/523c9843-9289-4179-a9b9-3c3a30a7ba6d" />
+<img width="1000" height="800" alt="Vendas por forma de pagamento (1)" src="https://github.com/user-attachments/assets/5f2cea24-941a-45aa-9ed9-a44058c8eee1" />
+
 
 
 O método Crédit Card (Cartão de crédito) se destaca como prefência.
